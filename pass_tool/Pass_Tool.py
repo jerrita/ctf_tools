@@ -43,15 +43,27 @@ class MyWin(QWidget, Ui_Form):
         self.caeserEdit.setText(str(int(self.caeserEdit.text()) - 1))
 
     def b64en(self):
-        inp = self.inputEdit.toPlainText().encode()
-        self.resultEdit.setPlainText(base64.b64encode(inp).decode())
+        inp = self.inputEdit.toPlainText().split()
+        out = []
+        for i in inp:
+            out.append(base64.b64encode(i.encode()).decode())
+        self.resultEdit.setPlainText('\n'.join(out))
 
     def b64de(self):
         try:
-            inp = self.inputEdit.toPlainText().encode()
-            self.resultEdit.setPlainText(base64.b64decode(inp).decode())
+            inp = self.inputEdit.toPlainText().split()
+            out = []
+            for i in inp:
+                out.append(base64.b64decode(i.encode()).decode())
+            self.resultEdit.setPlainText('\n'.join(out))
         except Exception as e:
             self.resultEdit.setPlainText(str(e))
+
+    def changeBtnClicked(self):
+        up = self.inputEdit.toPlainText()
+        down = self.resultEdit.toPlainText()
+        self.inputEdit.setPlainText(down)
+        self.resultEdit.setPlainText(up)
 
 
 if __name__ == '__main__':

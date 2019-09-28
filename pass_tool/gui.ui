@@ -23,7 +23,7 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,7">
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0,0,0">
+        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0,0,0,0">
          <item>
           <widget class="QPushButton" name="caesarGo">
            <property name="text">
@@ -89,6 +89,13 @@
            </property>
           </widget>
          </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="text">
+            <string>数据交换</string>
+           </property>
+          </widget>
+         </item>
         </layout>
        </item>
        <item>
@@ -108,7 +115,7 @@
    <item row="1" column="0">
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>Password tool v1.0 By Jerrita</string>
+      <string>Password tool v1.1 By Jerrita</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -129,7 +136,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>111</x>
-     <y>137</y>
+     <y>114</y>
     </hint>
     <hint type="destinationlabel">
      <x>32</x>
@@ -145,7 +152,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>59</x>
-     <y>137</y>
+     <y>114</y>
     </hint>
     <hint type="destinationlabel">
      <x>17</x>
@@ -160,8 +167,8 @@
    <slot>b64en()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>53</x>
-     <y>212</y>
+     <x>67</x>
+     <y>166</y>
     </hint>
     <hint type="destinationlabel">
      <x>9</x>
@@ -176,8 +183,8 @@
    <slot>b64de()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>110</x>
-     <y>247</y>
+     <x>124</x>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>147</x>
@@ -192,8 +199,8 @@
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>74</x>
-     <y>265</y>
+     <x>88</x>
+     <y>236</y>
     </hint>
     <hint type="destinationlabel">
      <x>340</x>
@@ -208,8 +215,8 @@
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>49</x>
-     <y>270</y>
+     <x>63</x>
+     <y>236</y>
     </hint>
     <hint type="destinationlabel">
      <x>121</x>
@@ -233,6 +240,22 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>changeBtnClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>77</x>
+     <y>573</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>plusBtnClicked()</slot>
@@ -240,5 +263,6 @@
   <slot>b64en()</slot>
   <slot>b64de()</slot>
   <slot>caesarBtnClicked()</slot>
+  <slot>changeBtnClicked()</slot>
  </slots>
 </ui>

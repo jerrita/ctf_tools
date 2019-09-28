@@ -51,6 +51,9 @@ class Ui_Form(object):
         self.pushButton_2 = QtWidgets.QPushButton(Form)
         self.pushButton_2.setObjectName("pushButton_2")
         self.verticalLayout_2.addWidget(self.pushButton_2)
+        self.pushButton_4 = QtWidgets.QPushButton(Form)
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.verticalLayout_2.addWidget(self.pushButton_4)
         self.horizontalLayout.addLayout(self.verticalLayout_2)
         self.inputEdit = QtWidgets.QTextEdit(Form)
         self.inputEdit.setObjectName("inputEdit")
@@ -76,6 +79,7 @@ class Ui_Form(object):
         self.pushButton_2.clicked.connect(self.inputEdit.clear)
         self.pushButton_2.clicked.connect(self.resultEdit.clear)
         self.caesarGo.clicked.connect(Form.caesarBtnClicked)
+        self.pushButton_4.clicked.connect(Form.changeBtnClicked)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -88,6 +92,7 @@ class Ui_Form(object):
         self.pushButton_3.setText(_translate("Form", "base64加密"))
         self.pushButton.setText(_translate("Form", "base64解密"))
         self.pushButton_2.setText(_translate("Form", "清空数据"))
-        self.label.setText(_translate("Form", "Password tool v1.0 By Jerrita"))
+        self.pushButton_4.setText(_translate("Form", "数据交换"))
+        self.label.setText(_translate("Form", "Password tool v1.1 By Jerrita"))
 
 import ic_rc
