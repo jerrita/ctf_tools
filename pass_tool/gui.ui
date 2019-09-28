@@ -115,7 +115,7 @@
    <item row="1" column="0">
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>Password tool v1.1 By Jerrita</string>
+      <string>Password tool v1.2 By Jerrita</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

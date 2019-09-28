@@ -93,6 +93,6 @@ class Ui_Form(object):
         self.pushButton.setText(_translate("Form", "base64解密"))
         self.pushButton_2.setText(_translate("Form", "清空数据"))
         self.pushButton_4.setText(_translate("Form", "数据交换"))
-        self.label.setText(_translate("Form", "Password tool v1.1 By Jerrita"))
+        self.label.setText(_translate("Form", "Password tool v1.2 By Jerrita"))
 
 import ic_rc

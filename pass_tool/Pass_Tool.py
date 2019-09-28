@@ -54,7 +54,10 @@ class MyWin(QWidget, Ui_Form):
             inp = self.inputEdit.toPlainText().split()
             out = []
             for i in inp:
-                out.append(base64.b64decode(i.encode()).decode())
+                try:
+                    out.append(base64.b64decode(i.encode()).decode())
+                except Exception as e:
+                    out.append(str(e))
             self.resultEdit.setPlainText('\n'.join(out))
         except Exception as e:
             self.resultEdit.setPlainText(str(e))
