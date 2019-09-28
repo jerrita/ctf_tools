@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ctf_tools.iml" filepath="$PROJECT_DIR$/.idea/ctf_tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pass_tool/.idea/pass_tool.iml" filepath="$PROJECT_DIR$/pass_tool/.idea/pass_tool.iml" />
     </modules>
   </component>
 </project>
