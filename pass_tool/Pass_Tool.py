@@ -7,14 +7,14 @@ import base64
 def caesar(i, p):
     t = ord(i) + p
     if 'a' <= i <= 'z':
-        if t > ord('z'):
+        while t > ord('z'):
             t -= 26
-        if t < ord('a'):
+        while t < ord('a'):
             t += 26
     if 'A' <= i <= 'Z':
-        if t > ord('Z'):
+        while t > ord('Z'):
             t -= 26
-        if t < ord('A'):
+        while t < ord('A'):
             t += 26
     return chr(t)
 
