@@ -38,6 +38,9 @@ class Ui_Form(object):
         self.subtractBtn = QtWidgets.QToolButton(Form)
         self.subtractBtn.setObjectName("subtractBtn")
         self.horizontalLayout_2.addWidget(self.subtractBtn)
+        self.allButton = QtWidgets.QToolButton(Form)
+        self.allButton.setObjectName("allButton")
+        self.horizontalLayout_2.addWidget(self.allButton)
         self.plusBtn = QtWidgets.QToolButton(Form)
         self.plusBtn.setObjectName("plusBtn")
         self.horizontalLayout_2.addWidget(self.plusBtn)
@@ -80,6 +83,7 @@ class Ui_Form(object):
         self.pushButton_2.clicked.connect(self.resultEdit.clear)
         self.caesarGo.clicked.connect(Form.caesarBtnClicked)
         self.pushButton_4.clicked.connect(Form.changeBtnClicked)
+        self.allButton.clicked.connect(Form.allBtnClicked)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -88,6 +92,7 @@ class Ui_Form(object):
         self.caesarGo.setText(_translate("Form", "凯撒"))
         self.caeserEdit.setText(_translate("Form", "13"))
         self.subtractBtn.setText(_translate("Form", "-"))
+        self.allButton.setText(_translate("Form", "A"))
         self.plusBtn.setText(_translate("Form", "+"))
         self.pushButton_3.setText(_translate("Form", "base64加密"))
         self.pushButton.setText(_translate("Form", "base64解密"))

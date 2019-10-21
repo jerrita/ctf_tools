@@ -60,6 +60,13 @@
             </widget>
            </item>
            <item>
+            <widget class="QToolButton" name="allButton">
+             <property name="text">
+              <string>A</string>
+             </property>
+            </widget>
+           </item>
+           <item>
             <widget class="QToolButton" name="plusBtn">
              <property name="text">
               <string>+</string>
@@ -151,7 +158,7 @@
    <slot>subBtnClicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>59</x>
+     <x>46</x>
      <y>114</y>
     </hint>
     <hint type="destinationlabel">
@@ -256,6 +263,22 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>allButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>allBtnClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>59</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>plusBtnClicked()</slot>
@@ -264,5 +287,6 @@
   <slot>b64de()</slot>
   <slot>caesarBtnClicked()</slot>
   <slot>changeBtnClicked()</slot>
+  <slot>allBtnClicked()</slot>
  </slots>
 </ui>
