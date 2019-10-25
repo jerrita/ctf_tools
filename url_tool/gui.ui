@@ -150,12 +150,28 @@
    <slot>go_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1352</x>
+     <x>1351</x>
      <y>39</y>
     </hint>
     <hint type="destinationlabel">
      <x>892</x>
      <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>urlEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>Form</receiver>
+   <slot>go_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>635</x>
+     <y>28</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>44</y>
     </hint>
    </hints>
   </connection>

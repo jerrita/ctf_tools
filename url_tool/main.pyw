@@ -18,7 +18,9 @@ class MyWidget(QWidget, Ui_Form):
         get = self.getEdit.toPlainText()
         post = self.postEdit.toPlainText()
         head = self.headEdit.toPlainText()
-        url = self.urlEdit.text() + '?'
+        url = self.urlEdit.text()
+        if '?' not in url:
+            url = url + '?'
         for i in get.split():
             url += i
             if i != get.split()[-1]:
@@ -36,9 +38,11 @@ class MyWidget(QWidget, Ui_Form):
         self.sourceShow.setPlainText(res.text)
         view = QWebEngineView(self.browView)
         view.setHtml(res.text)
-        title = res.text.split('<title>')[1].split('</title>')[0]
-        print(title)
-        self.titleShow.setText(title)
+        try:
+            title = res.text.split('<title>')[1].split('</title>')[0]
+            self.titleShow.setText(title)
+        except Exception as e:
+            self.titleShow.setText(url[:50])
         view.setFixedWidth(self.browView.width())
         view.setFixedHeight(self.browView.height())
         view.show()

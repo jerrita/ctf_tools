@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ctf_tools.iml" filepath="$PROJECT_DIR$/.idea/ctf_tools.iml" />
       <module fileurl="file://$PROJECT_DIR$/pass_tool/.idea/pass_tool.iml" filepath="$PROJECT_DIR$/pass_tool/.idea/pass_tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/辣鸡题目检测器/.idea/辣鸡题目检测器.iml" filepath="$PROJECT_DIR$/辣鸡题目检测器/.idea/辣鸡题目检测器.iml" />
     </modules>
   </component>
 </project>
