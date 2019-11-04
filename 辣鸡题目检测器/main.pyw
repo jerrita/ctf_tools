@@ -2,11 +2,8 @@ import sys
 
 # if hasattr(sys, 'frozen'):
 #     os.environ['PATH'] = sys._MEIPASS + ";" + os.environ['PATH']
-from PyQt5.QtCore import QUrl
 from PyQt5.QtWidgets import QApplication, QWidget, QFileDialog
-from PyQt5.QtWebEngineWidgets import QWebEngineView
 from gui import *
-import requests
 
 
 class MyWidget(QWidget, Ui_Form):
